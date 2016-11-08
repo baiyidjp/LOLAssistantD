@@ -1,12 +1,13 @@
 //
 //  AppDelegate.m
-//  LOLAssistantD
+//  LOL Helper
 //
-//  Created by tztddong on 2016/11/7.
+//  Created by tztddong on 16/10/9.
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "LOLMainRootController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    LOLMainRootController *rootCtrl = [[LOLMainRootController alloc]init];
+    self.window.rootViewController = rootCtrl;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
