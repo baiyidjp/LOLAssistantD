@@ -6,8 +6,8 @@
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
-#import "LOLBaseViewController.h"
+#import "LOLBasePanViewController.h"
 
-@interface LOLNewsController : LOLBaseViewController
+@interface LOLNewsController : LOLBasePanViewController
 
 @end

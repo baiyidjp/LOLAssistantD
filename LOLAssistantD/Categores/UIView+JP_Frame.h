@@ -19,4 +19,6 @@
 
 - (void)jp_removeAllSubViews;
 
+- (void)jp_viewMoveTo_X:(CGFloat)x Y:(CGFloat)y duration:(CGFloat)duration finishBlock:(void(^)())finishBlock;
+
 @end

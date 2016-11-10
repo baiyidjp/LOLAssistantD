@@ -6,8 +6,8 @@
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
-#import "LOLBaseViewController.h"
+#import "LOLBaseBackViewController.h"
 
-@interface LOLFriendController : LOLBaseViewController
+@interface LOLFriendController : LOLBaseBackViewController
 
 @end

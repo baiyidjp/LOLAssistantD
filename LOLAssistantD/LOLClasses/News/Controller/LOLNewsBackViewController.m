@@ -14,23 +14,28 @@
 #define kRightMinPan KWIDTH*0.25
 #define kLeftMaxPan  KWIDTH*0.6
 
-@interface LOLNewsBackViewController ()
+@interface LOLNewsBackViewController ()<LOLBasePanViewControllerDelegate>
 
 @end
 
 @implementation LOLNewsBackViewController
 {
     LOLNewsController       *_newsController;
-    UIView                  *_newsView;
     BOOL                    _isRightPan;
     BOOL                    _isStopRight;
-    UIImageView             *_imageView;
+    UITabBar                *_bottomTabbar;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    
+    [super viewDidDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -45,120 +50,53 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     _newsController = [[LOLNewsController alloc] init];
-    _newsView = _newsController.view;
+    _newsController.delegate = self;
     [self addChildViewController:_newsController];
-    _newsView.frame = self.view.bounds;
-    _newsView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.view addSubview:_newsView];
+    _newsController.view.frame = self.view.bounds;
+    _newsController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.view addSubview:_newsController.view];
     [_newsController didMoveToParentViewController:self];
-    
-    _newsView.userInteractionEnabled = YES;
-    UIPanGestureRecognizer *leftPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(leftPan:)];
-    [_newsView addGestureRecognizer:leftPan];
-    
-    _imageView = [[UIImageView alloc] initWithFrame:_newsView.bounds];
-    [_newsView addSubview:_imageView];
-    _imageView.hidden = YES;
+
+    _bottomTabbar = self.tabBarController.tabBar;
+
 }
 
-#pragma mark - leftPan
-- (void)leftPan:(UIPanGestureRecognizer *)panges{
+- (void)baseViewMoveTo:(CGFloat)x animaition:(BOOL)animation{
     
-    CGFloat panX = [panges translationInView:_newsView].x;
-    
-    switch (panges.state) {
-        case UIGestureRecognizerStateBegan:
-            NSLog(@"开始滑动");
-            _imageView.image = [self screenImage];
-            _imageView.hidden = NO;
-            break;
-        case UIGestureRecognizerStateChanged:
-        {
-            self.tabBarController.tabBar.hidden = YES;
-            if (panX >= 0) {
-                if (_newsView.jp_x < KWIDTH) {
-                    NSLog(@"右滑--> %f",panX);
-                    _isRightPan = YES;
-                    if (_isStopRight) {
-                        _newsView.jp_x = kRightMaxPan + panX;
-                    }else{
-                        _newsView.jp_x = panX;
-                    }
-                }
-            }else{
-                if (_isStopRight) {
-                    NSLog(@"左滑--> %f",panX);
-                    _isRightPan = NO;
-                    _newsView.jp_x = kRightMaxPan + panX;
-                }
-            }
-        }
-            break;
-        case UIGestureRecognizerStateEnded:
-            NSLog(@"手指离开");
-            
-            if (_isRightPan) {
-                if (_newsView.jp_x > KWIDTH/4.0) {
-                    [self moveViewto:CGPointMake(KWIDTH*0.8, 0) hiddenTabbar:YES];
-                }else{
-                    [self moveViewto:CGPointMake(0, 0) hiddenTabbar:NO];
-                    
-                }
-            }else{
-                if(_newsView.jp_x < KWIDTH*0.6){
-                    [self moveViewto:CGPointMake(0, 0) hiddenTabbar:NO];
-                    
-                }else{
-                    [self moveViewto:CGPointMake(KWIDTH*0.8, 0) hiddenTabbar:YES];
-                }
-            }
-            
-            break;
-            
-        default:
-            break;
+    if (animation) {
+        [_bottomTabbar jp_viewMoveTo_X:x Y:_bottomTabbar.jp_y duration:0.3 finishBlock:nil];
+    }else{
+        _bottomTabbar.jp_x = x;
     }
 }
 
-#pragma mark - move view
-- (void)moveViewto:(CGPoint)point hiddenTabbar:(BOOL)hidden{
+- (void)didSelectHeadIcon{
     
-    [_newsView moveTo:point duration:0.3 option:0];
-    self.tabBarController.tabBar.hidden = hidden;
-    _isStopRight = hidden;
-    _imageView.hidden = !hidden;
-}
-
-#pragma mark - moveX
-- (void)moveX{
-    
-//    [LOLBaseMethod jp_XbaseAnimationWithView:_newsView From:kRightMaxPan+3 to:kRightMaxPan-3 duration:0.3 repeatCount:1];
+    [_newsController moveToRight];
 }
 
 #pragma mark - 截屏
 - (UIImage *)screenImage{
     
-    CGSize imageSize = _newsView.frame.size;
-    //开启上下文
-    UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0.0);
-    //获取当前的上下文
-    CGContextRef contextRef = UIGraphicsGetCurrentContext();
-    //创建需要所截图的区域路径
-    UIBezierPath *path = [UIBezierPath bezierPathWithRect:_newsView.bounds];
-    //    //设置路径的宽和颜色
-    //    CGContextSetLineWidth(contextRef, 1);
-    //    [[UIColor blackColor] set];
-    //将路径添加到上下文中
-    CGContextAddPath(contextRef, path.CGPath);
-    //截取路径内的上下文
-    CGContextClip(contextRef);
-    //把控制器的view中的内容渲染到上下文中
-    [_newsView.layer renderInContext:contextRef];
-    //取出图片
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    // 将要被截图的view,即窗口的根控制器的view
+    UIViewController *beyondVC = self.view.window.rootViewController;
+    // 背景图片 总的大小
+    CGSize size = beyondVC.view.frame.size;
+    // 开启上下文,使用参数之后,截出来的是原图（YES  0.0 质量高）
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0);
+    // 要裁剪的矩形范围
+    CGRect rect = CGRectMake(0, 0, KWIDTH, KHEIGHT);
+    //注：iOS7以后renderInContext：由drawViewHierarchyInRect：afterScreenUpdates：替代
+    [beyondVC.view drawViewHierarchyInRect:rect  afterScreenUpdates:NO];
+    // 从上下文中,取出UIImage
+    UIImage *snapshot = UIGraphicsGetImageFromCurrentImageContext();
+    // 千万记得,结束上下文(移除栈顶的基于当前位图的图形上下文)
     UIGraphicsEndImageContext();
 
-    return image;
+    if (snapshot) {
+        return snapshot;
+    }
+    return nil;
 }
 
 @end

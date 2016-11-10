@@ -95,6 +95,7 @@ static NSString *newsCell = @"newsCell";
     _headIconBtn.layer.borderWidth = 2;
     _headIconBtn.layer.borderColor = DefaultGodColor.CGColor;
     _headIconBtn.frame = CGRectMake(KMARGIN, 2*KMARGIN+2, 34, 34);
+    [_headIconBtn addTarget:self action:@selector(headerIconClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_headIconBtn];
     
     _searchBtn = [[UIButton alloc]init];
@@ -113,6 +114,9 @@ static NSString *newsCell = @"newsCell";
     _titleNameLab.jp_centerY = _headIconBtn.jp_centerY;
     _titleNameLab.hidden = YES;
     [self.view insertSubview:_titleNameLab aboveSubview:_alphaView];
+    
+    [self.view insertSubview:self.topAlphaView aboveSubview:_headIconBtn];
+
 }
 
 
@@ -492,6 +496,14 @@ static NSString *newsCell = @"newsCell";
         _isHiddenSpecialClassView = YES;
     }
     [self requestNewsList];
+}
+
+#pragma mark - headerIconClick
+- (void)headerIconClick{
+    
+    if (self.delegate) {
+        [self.delegate didSelectHeadIcon];
+    }
 }
 
 @end
