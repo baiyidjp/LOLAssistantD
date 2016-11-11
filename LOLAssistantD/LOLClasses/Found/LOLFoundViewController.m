@@ -1,22 +1,23 @@
 //
-//  LOLFoundController.m
-//  LOL Helper
+//  LOLFoundViewController.m
+//  LOLAssistantD
 //
-//  Created by tztddong on 16/10/9.
+//  Created by tztddong on 2016/11/11.
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
-#import "LOLFoundController.h"
+#import "LOLFoundViewController.h"
 
-@interface LOLFoundController ()
+@interface LOLFoundViewController ()
 
 @end
 
-@implementation LOLFoundController
+@implementation LOLFoundViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {

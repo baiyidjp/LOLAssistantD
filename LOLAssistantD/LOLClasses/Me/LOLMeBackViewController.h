@@ -1,5 +1,5 @@
 //
-//  LOLFoundController.h
+//  LOLMeViewController.h
 //  LOL Helper
 //
 //  Created by tztddong on 16/10/9.
@@ -8,6 +8,6 @@
 
 #import "LOLBaseBackViewController.h"
 
-@interface LOLFoundController : LOLBaseBackViewController
+@interface LOLMeBackViewController : LOLBaseBackViewController
 
 @end

@@ -118,10 +118,10 @@ NSInteger const allCount = 200;
     
     NSInteger index = scrollView.contentOffset.x / scrollView.bounds.size.width;
     NSInteger allCellCount = [_collectionView numberOfItemsInSection:0];
-    NSLog(@"2");
+    
     //实现无线滚动
     if (index == 0 || index == allCellCount - 1) {
-        NSLog(@"%zd",index);
+        
         
         if (index == 0) {
             index = allCellCount/2;
@@ -151,28 +151,28 @@ NSInteger const allCount = 200;
 - (void)update{
     
     _timeCount++;
-    NSLog(@"count  %zd",_timeCount);
+    
     if (_timeCount % scrollTime != 0){
         return;
     }else{
-        NSLog(@"%zd   %zd",_timeCount,_viewIndex);
+        
         _viewIndex++;
         [_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:_viewIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     }
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    NSLog(@"3");
+    
     [_timer setFireDate:[NSDate distantFuture]];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    NSLog(@"4");
+    
     [_timer setFireDate:[NSDate distantPast]];
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
-    NSLog(@"1");
+    
     _viewIndex = scrollView.contentOffset.x/self.bounds.size.width;
     _pageControl.currentPage = _viewIndex % _urls.count;
 }

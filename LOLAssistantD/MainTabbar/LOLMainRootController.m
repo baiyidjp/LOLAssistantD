@@ -8,9 +8,9 @@
 
 #import "LOLMainRootController.h"
 #import "LOLNewsBackViewController.h"
-#import "LOLMeViewController.h"
-#import "LOLFriendController.h"
-#import "LOLFoundController.h"
+#import "LOLMeBackViewController.h"
+#import "LOLFriendBackController.h"
+#import "LOLFoundBackController.h"
 #import "LOLNavigationController.h"
 
 @interface LOLMainRootController ()
@@ -27,9 +27,9 @@
     NSArray *imageArray = @[@"tab_icon_news_normal",@"tab_icon_friend_normal",@"tab_icon_quiz_normal",@"tab_icon_more_normal"];
     NSArray *selectImageArray = @[@"tab_icon_news_press",@"tab_icon_friend_press",@"tab_icon_quiz_press",@"tab_icon_more_press"];
     LOLNewsBackViewController *newsController = [[LOLNewsBackViewController alloc]init];
-    LOLFriendController *friendController = [[LOLFriendController alloc]init];
-    LOLFoundController *foundController = [[LOLFoundController alloc]init];
-    LOLMeViewController *meViewController = [[LOLMeViewController alloc]init];
+    LOLFriendBackController *friendController = [[LOLFriendBackController alloc]init];
+    LOLFoundBackController *foundController = [[LOLFoundBackController alloc]init];
+    LOLMeBackViewController *meViewController = [[LOLMeBackViewController alloc]init];
     NSArray *ctrlArray = @[newsController,friendController,foundController,meViewController];
     
     for (NSInteger i = 0; i < titleArray.count; i++) {

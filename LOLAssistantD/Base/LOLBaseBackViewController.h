@@ -7,6 +7,7 @@
 //
 
 #import "LOLBaseViewController.h"
+#import "LOLBasePanViewController.h"
 
 @interface LOLBaseBackViewController : LOLBaseViewController
 

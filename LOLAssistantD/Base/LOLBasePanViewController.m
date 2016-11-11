@@ -20,6 +20,7 @@
 {
     BOOL                    _isRightPan;
     BOOL                    _isStopRight;
+    UIButton                *_topAlphaView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,10 +30,11 @@
     UIPanGestureRecognizer *leftPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(leftPan:)];
     [self.view addGestureRecognizer:leftPan];
     
-    self.topAlphaView = [[UIButton alloc] initWithFrame:self.view.bounds];
-    self.topAlphaView.hidden = YES;
-    [self.topAlphaView addTarget:self action:@selector(moveToLeft) forControlEvents:UIControlEventTouchUpInside];
-    
+    _topAlphaView = [[UIButton alloc] initWithFrame:self.view.bounds];
+    _topAlphaView.hidden = YES;
+    _topAlphaView.removeHighlightEffect = YES;
+    [_topAlphaView addTarget:self action:@selector(moveToLeft) forControlEvents:UIControlEventTouchUpInside];
+    [[UIApplication sharedApplication].keyWindow addSubview:_topAlphaView];
 }
 
 #pragma mark - leftPan
@@ -43,16 +45,16 @@
     switch (panges.state) {
         case UIGestureRecognizerStateBegan:
             NSLog(@"开始滑动");
-//            if (!_isStopRight) {
-                self.topAlphaView.hidden = NO;
-//                [self.topAlphaView setBackgroundImage:[self screenImage] forState:UIControlStateNormal];
-//            }
+            if (!_isStopRight) {
+                _topAlphaView.hidden = NO;
+                [_topAlphaView setBackgroundImage:[self screenImage] forState:UIControlStateNormal];
+            }
             break;
         case UIGestureRecognizerStateChanged:
         {
             if (panX >= 0) {
                 if (self.view.jp_x < KWIDTH) {
-                    NSLog(@"右滑--> %f",panX);
+                    
                     _isRightPan = YES;
                     if (_isStopRight) {
                         self.view.jp_x = kRightMaxPan + panX;
@@ -62,11 +64,12 @@
                 }
             }else{
                 if (_isStopRight) {
-                    NSLog(@"左滑--> %f",panX);
+                    
                     _isRightPan = NO;
                     self.view.jp_x = kRightMaxPan + panX;
                 }
             }
+            _topAlphaView.jp_x = self.view.jp_x;
             //代理
             [self.delegate baseViewMoveTo:self.view.jp_x animaition:NO];
         }
@@ -113,10 +116,11 @@
 - (void)moveViewto:(CGFloat)x isStopR:(BOOL)isStopR{
     
     [self.view jp_viewMoveTo_X:x Y:self.view.jp_y duration:0.3 finishBlock:nil];
+    [_topAlphaView jp_viewMoveTo_X:x Y:self.view.jp_y duration:0.3 finishBlock:nil];
     //代理
     [self.delegate baseViewMoveTo:x animaition:YES];
     _isStopRight = isStopR;
-    self.topAlphaView.hidden = !isStopR;
+    _topAlphaView.hidden = !isStopR;
     
 }
 

@@ -107,6 +107,7 @@ static NSString *cellID = @"infotable";
     _infoTableView.delegate = self;
     _infoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _infoTableView.backgroundColor = [UIColor clearColor];
+    _infoTableView.scrollEnabled = NO;
     [_infoTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     [self.view addSubview:_infoTableView];
 }

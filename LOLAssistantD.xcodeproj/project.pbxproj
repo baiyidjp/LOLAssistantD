@@ -15,9 +15,6 @@
 		A207F8AA1DD03DDC001B8B67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A207F8A81DD03DDC001B8B67 /* LaunchScreen.storyboard */; };
 		A207F8B51DD03DDC001B8B67 /* LOLAssistantDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8B41DD03DDC001B8B67 /* LOLAssistantDTests.m */; };
 		A207F8C01DD03DDC001B8B67 /* LOLAssistantDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8BF1DD03DDC001B8B67 /* LOLAssistantDUITests.m */; };
-		A207F9F51DD03E33001B8B67 /* LOLBaseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8D11DD03E33001B8B67 /* LOLBaseMethod.m */; };
-		A207F9F61DD03E33001B8B67 /* LOLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8D31DD03E33001B8B67 /* LOLBaseViewController.m */; };
-		A207F9F71DD03E33001B8B67 /* LOLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8D51DD03E33001B8B67 /* LOLRequest.m */; };
 		A207F9F81DD03E33001B8B67 /* UIColor+JP_Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8D91DD03E33001B8B67 /* UIColor+JP_Color.m */; };
 		A207F9F91DD03E33001B8B67 /* UITableView+JP_Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8DB1DD03E33001B8B67 /* UITableView+JP_Refresh.m */; };
 		A207F9FA1DD03E33001B8B67 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F8DD1DD03E33001B8B67 /* UIView+Animation.m */; };
@@ -85,9 +82,9 @@
 		A207FA491DD03E33001B8B67 /* tab_icon_news_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A207F93F1DD03E33001B8B67 /* tab_icon_news_press@2x.png */; };
 		A207FA4A1DD03E33001B8B67 /* tab_icon_quiz_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A207F9401DD03E33001B8B67 /* tab_icon_quiz_normal@2x.png */; };
 		A207FA4B1DD03E33001B8B67 /* tab_icon_quiz_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A207F9411DD03E33001B8B67 /* tab_icon_quiz_press@2x.png */; };
-		A207FA4C1DD03E33001B8B67 /* LOLFoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9451DD03E33001B8B67 /* LOLFoundController.m */; };
-		A207FA4D1DD03E33001B8B67 /* LOLFriendController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9481DD03E33001B8B67 /* LOLFriendController.m */; };
-		A207FA4E1DD03E33001B8B67 /* LOLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F94B1DD03E33001B8B67 /* LOLMeViewController.m */; };
+		A207FA4C1DD03E33001B8B67 /* LOLFoundBackController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9451DD03E33001B8B67 /* LOLFoundBackController.m */; };
+		A207FA4D1DD03E33001B8B67 /* LOLFriendBackController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9481DD03E33001B8B67 /* LOLFriendBackController.m */; };
+		A207FA4E1DD03E33001B8B67 /* LOLMeBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F94B1DD03E33001B8B67 /* LOLMeBackViewController.m */; };
 		A207FA4F1DD03E33001B8B67 /* LOLNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F94F1DD03E33001B8B67 /* LOLNewsController.m */; };
 		A207FA501DD03E33001B8B67 /* LOLNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9511DD03E33001B8B67 /* LOLNewsDetailController.m */; };
 		A207FA511DD03E33001B8B67 /* LOLNewsCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9541DD03E33001B8B67 /* LOLNewsCellModel.m */; };
@@ -160,8 +157,6 @@
 		A207FA941DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F01DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m */; };
 		A207FA951DD03E33001B8B67 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F21DD03E33001B8B67 /* UIImageView+WebCache.m */; };
 		A207FA961DD03E33001B8B67 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F41DD03E33001B8B67 /* UIView+WebCacheOperation.m */; };
-		A28779AF1DD4550D00CD4026 /* LOLBasePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28779AE1DD4550D00CD4026 /* LOLBasePanViewController.m */; };
-		A28779B21DD4625700CD4026 /* LOLBaseBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28779B11DD4625700CD4026 /* LOLBaseBackViewController.m */; };
 		A28779C51DD465D600CD4026 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B41DD465D600CD4026 /* Icon-40.png */; };
 		A28779C61DD465D600CD4026 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B51DD465D600CD4026 /* Icon-40@2x.png */; };
 		A28779C71DD465D600CD4026 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B61DD465D600CD4026 /* Icon-40@3x.png */; };
@@ -192,6 +187,15 @@
 		A28779ED1DD46AEA00CD4026 /* friend_sex_female@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779EB1DD46AEA00CD4026 /* friend_sex_female@2x.png */; };
 		A28779EE1DD46AEA00CD4026 /* friend_sex_male@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779EC1DD46AEA00CD4026 /* friend_sex_male@2x.png */; };
 		A28779F11DD46F4A00CD4026 /* LOLLeftSetBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A28779F01DD46F4A00CD4026 /* LOLLeftSetBtn.m */; };
+		A2A871B61DD5BB070066E308 /* LOLMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871B51DD5BB070066E308 /* LOLMeViewController.m */; };
+		A2A871B91DD5BC1B0066E308 /* LOLFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871B81DD5BC1B0066E308 /* LOLFriendViewController.m */; };
+		A2A871BC1DD5BDB40066E308 /* LOLFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871BB1DD5BDB40066E308 /* LOLFoundViewController.m */; };
+		A2A871C21DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871C11DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.m */; };
+		A2A871D21DD5C8200066E308 /* LOLBaseBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871C51DD5C8200066E308 /* LOLBaseBackViewController.m */; };
+		A2A871D31DD5C8200066E308 /* LOLBaseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871C71DD5C8200066E308 /* LOLBaseMethod.m */; };
+		A2A871D41DD5C8200066E308 /* LOLBasePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871C91DD5C8200066E308 /* LOLBasePanViewController.m */; };
+		A2A871D51DD5C8200066E308 /* LOLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871CB1DD5C8200066E308 /* LOLBaseViewController.m */; };
+		A2A871D61DD5C8200066E308 /* LOLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871D01DD5C8200066E308 /* LOLRequest.m */; };
 		A2CF17CA1DD16FF800FC18A3 /* LOLNewsBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CF17C91DD16FF800FC18A3 /* LOLNewsBackViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -229,15 +233,6 @@
 		A207F8BB1DD03DDC001B8B67 /* LOLAssistantDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LOLAssistantDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A207F8BF1DD03DDC001B8B67 /* LOLAssistantDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LOLAssistantDUITests.m; sourceTree = "<group>"; };
 		A207F8C11DD03DDC001B8B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A207F8CE1DD03E33001B8B67 /* LOL_DefineValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOL_DefineValue.h; sourceTree = "<group>"; };
-		A207F8CF1DD03E33001B8B67 /* LOL_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOL_Request.h; sourceTree = "<group>"; };
-		A207F8D01DD03E33001B8B67 /* LOLBaseMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseMethod.h; sourceTree = "<group>"; };
-		A207F8D11DD03E33001B8B67 /* LOLBaseMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseMethod.m; sourceTree = "<group>"; };
-		A207F8D21DD03E33001B8B67 /* LOLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseViewController.h; sourceTree = "<group>"; };
-		A207F8D31DD03E33001B8B67 /* LOLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseViewController.m; sourceTree = "<group>"; };
-		A207F8D41DD03E33001B8B67 /* LOLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLRequest.h; sourceTree = "<group>"; };
-		A207F8D51DD03E33001B8B67 /* LOLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLRequest.m; sourceTree = "<group>"; };
-		A207F8D61DD03E33001B8B67 /* PrefixHeader_LOL.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_LOL.pch; sourceTree = "<group>"; };
 		A207F8D81DD03E33001B8B67 /* UIColor+JP_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JP_Color.h"; sourceTree = "<group>"; };
 		A207F8D91DD03E33001B8B67 /* UIColor+JP_Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JP_Color.m"; sourceTree = "<group>"; };
 		A207F8DA1DD03E33001B8B67 /* UITableView+JP_Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JP_Refresh.h"; sourceTree = "<group>"; };
@@ -318,12 +313,12 @@
 		A207F93F1DD03E33001B8B67 /* tab_icon_news_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon_news_press@2x.png"; sourceTree = "<group>"; };
 		A207F9401DD03E33001B8B67 /* tab_icon_quiz_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon_quiz_normal@2x.png"; sourceTree = "<group>"; };
 		A207F9411DD03E33001B8B67 /* tab_icon_quiz_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon_quiz_press@2x.png"; sourceTree = "<group>"; };
-		A207F9441DD03E33001B8B67 /* LOLFoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFoundController.h; sourceTree = "<group>"; };
-		A207F9451DD03E33001B8B67 /* LOLFoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFoundController.m; sourceTree = "<group>"; };
-		A207F9471DD03E33001B8B67 /* LOLFriendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFriendController.h; sourceTree = "<group>"; };
-		A207F9481DD03E33001B8B67 /* LOLFriendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFriendController.m; sourceTree = "<group>"; };
-		A207F94A1DD03E33001B8B67 /* LOLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLMeViewController.h; sourceTree = "<group>"; };
-		A207F94B1DD03E33001B8B67 /* LOLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLMeViewController.m; sourceTree = "<group>"; };
+		A207F9441DD03E33001B8B67 /* LOLFoundBackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFoundBackController.h; sourceTree = "<group>"; };
+		A207F9451DD03E33001B8B67 /* LOLFoundBackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFoundBackController.m; sourceTree = "<group>"; };
+		A207F9471DD03E33001B8B67 /* LOLFriendBackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFriendBackController.h; sourceTree = "<group>"; };
+		A207F9481DD03E33001B8B67 /* LOLFriendBackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFriendBackController.m; sourceTree = "<group>"; };
+		A207F94A1DD03E33001B8B67 /* LOLMeBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLMeBackViewController.h; sourceTree = "<group>"; };
+		A207F94B1DD03E33001B8B67 /* LOLMeBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLMeBackViewController.m; sourceTree = "<group>"; };
 		A207F94E1DD03E33001B8B67 /* LOLNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLNewsController.h; sourceTree = "<group>"; };
 		A207F94F1DD03E33001B8B67 /* LOLNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLNewsController.m; sourceTree = "<group>"; };
 		A207F9501DD03E33001B8B67 /* LOLNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLNewsDetailController.h; sourceTree = "<group>"; };
@@ -476,10 +471,6 @@
 		A207F9F21DD03E33001B8B67 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A207F9F31DD03E33001B8B67 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A207F9F41DD03E33001B8B67 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		A28779AD1DD4550D00CD4026 /* LOLBasePanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBasePanViewController.h; sourceTree = "<group>"; };
-		A28779AE1DD4550D00CD4026 /* LOLBasePanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBasePanViewController.m; sourceTree = "<group>"; };
-		A28779B01DD4625700CD4026 /* LOLBaseBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseBackViewController.h; sourceTree = "<group>"; };
-		A28779B11DD4625700CD4026 /* LOLBaseBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseBackViewController.m; sourceTree = "<group>"; };
 		A28779B41DD465D600CD4026 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		A28779B51DD465D600CD4026 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		A28779B61DD465D600CD4026 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
@@ -511,6 +502,27 @@
 		A28779EC1DD46AEA00CD4026 /* friend_sex_male@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friend_sex_male@2x.png"; sourceTree = "<group>"; };
 		A28779EF1DD46F4A00CD4026 /* LOLLeftSetBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLLeftSetBtn.h; sourceTree = "<group>"; };
 		A28779F01DD46F4A00CD4026 /* LOLLeftSetBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLLeftSetBtn.m; sourceTree = "<group>"; };
+		A2A871B41DD5BB070066E308 /* LOLMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLMeViewController.h; sourceTree = "<group>"; };
+		A2A871B51DD5BB070066E308 /* LOLMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLMeViewController.m; sourceTree = "<group>"; };
+		A2A871B71DD5BC1B0066E308 /* LOLFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFriendViewController.h; sourceTree = "<group>"; };
+		A2A871B81DD5BC1B0066E308 /* LOLFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFriendViewController.m; sourceTree = "<group>"; };
+		A2A871BA1DD5BDB40066E308 /* LOLFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLFoundViewController.h; sourceTree = "<group>"; };
+		A2A871BB1DD5BDB40066E308 /* LOLFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLFoundViewController.m; sourceTree = "<group>"; };
+		A2A871C01DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RemoveHighlightEffect.h"; sourceTree = "<group>"; };
+		A2A871C11DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RemoveHighlightEffect.m"; sourceTree = "<group>"; };
+		A2A871C41DD5C8200066E308 /* LOLBaseBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseBackViewController.h; sourceTree = "<group>"; };
+		A2A871C51DD5C8200066E308 /* LOLBaseBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseBackViewController.m; sourceTree = "<group>"; };
+		A2A871C61DD5C8200066E308 /* LOLBaseMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseMethod.h; sourceTree = "<group>"; };
+		A2A871C71DD5C8200066E308 /* LOLBaseMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseMethod.m; sourceTree = "<group>"; };
+		A2A871C81DD5C8200066E308 /* LOLBasePanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBasePanViewController.h; sourceTree = "<group>"; };
+		A2A871C91DD5C8200066E308 /* LOLBasePanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBasePanViewController.m; sourceTree = "<group>"; };
+		A2A871CA1DD5C8200066E308 /* LOLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseViewController.h; sourceTree = "<group>"; };
+		A2A871CB1DD5C8200066E308 /* LOLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseViewController.m; sourceTree = "<group>"; };
+		A2A871CD1DD5C8200066E308 /* LOL_DefineValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOL_DefineValue.h; sourceTree = "<group>"; };
+		A2A871CE1DD5C8200066E308 /* LOL_Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOL_Request.h; sourceTree = "<group>"; };
+		A2A871CF1DD5C8200066E308 /* LOLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLRequest.h; sourceTree = "<group>"; };
+		A2A871D01DD5C8200066E308 /* LOLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLRequest.m; sourceTree = "<group>"; };
+		A2A871D11DD5C8200066E308 /* PrefixHeader_LOL.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_LOL.pch; sourceTree = "<group>"; };
 		A2CF17C81DD16FF800FC18A3 /* LOLNewsBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLNewsBackViewController.h; sourceTree = "<group>"; };
 		A2CF17C91DD16FF800FC18A3 /* LOLNewsBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLNewsBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -563,7 +575,8 @@
 		A207F8991DD03DDC001B8B67 /* LOLAssistantD */ = {
 			isa = PBXGroup;
 			children = (
-				A207F8CD1DD03E33001B8B67 /* BasePublic */,
+				A2A871C31DD5C8200066E308 /* Base */,
+				A2A871CC1DD5C8200066E308 /* Public */,
 				A207F8D71DD03E33001B8B67 /* Categores */,
 				A207F8E61DD03E33001B8B67 /* Custom */,
 				A207F8F41DD03E33001B8B67 /* images */,
@@ -609,29 +622,11 @@
 			path = LOLAssistantDUITests;
 			sourceTree = "<group>";
 		};
-		A207F8CD1DD03E33001B8B67 /* BasePublic */ = {
-			isa = PBXGroup;
-			children = (
-				A207F8CE1DD03E33001B8B67 /* LOL_DefineValue.h */,
-				A207F8CF1DD03E33001B8B67 /* LOL_Request.h */,
-				A207F8D01DD03E33001B8B67 /* LOLBaseMethod.h */,
-				A207F8D11DD03E33001B8B67 /* LOLBaseMethod.m */,
-				A207F8D21DD03E33001B8B67 /* LOLBaseViewController.h */,
-				A207F8D31DD03E33001B8B67 /* LOLBaseViewController.m */,
-				A28779AD1DD4550D00CD4026 /* LOLBasePanViewController.h */,
-				A28779AE1DD4550D00CD4026 /* LOLBasePanViewController.m */,
-				A28779B01DD4625700CD4026 /* LOLBaseBackViewController.h */,
-				A28779B11DD4625700CD4026 /* LOLBaseBackViewController.m */,
-				A207F8D41DD03E33001B8B67 /* LOLRequest.h */,
-				A207F8D51DD03E33001B8B67 /* LOLRequest.m */,
-				A207F8D61DD03E33001B8B67 /* PrefixHeader_LOL.pch */,
-			);
-			path = BasePublic;
-			sourceTree = "<group>";
-		};
 		A207F8D71DD03E33001B8B67 /* Categores */ = {
 			isa = PBXGroup;
 			children = (
+				A2A871C01DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.h */,
+				A2A871C11DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.m */,
 				A207F8D81DD03E33001B8B67 /* UIColor+JP_Color.h */,
 				A207F8D91DD03E33001B8B67 /* UIColor+JP_Color.m */,
 				A207F8DA1DD03E33001B8B67 /* UITableView+JP_Refresh.h */,
@@ -794,8 +789,10 @@
 		A207F9431DD03E33001B8B67 /* Found */ = {
 			isa = PBXGroup;
 			children = (
-				A207F9441DD03E33001B8B67 /* LOLFoundController.h */,
-				A207F9451DD03E33001B8B67 /* LOLFoundController.m */,
+				A207F9441DD03E33001B8B67 /* LOLFoundBackController.h */,
+				A207F9451DD03E33001B8B67 /* LOLFoundBackController.m */,
+				A2A871BA1DD5BDB40066E308 /* LOLFoundViewController.h */,
+				A2A871BB1DD5BDB40066E308 /* LOLFoundViewController.m */,
 			);
 			path = Found;
 			sourceTree = "<group>";
@@ -803,8 +800,10 @@
 		A207F9461DD03E33001B8B67 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
-				A207F9471DD03E33001B8B67 /* LOLFriendController.h */,
-				A207F9481DD03E33001B8B67 /* LOLFriendController.m */,
+				A207F9471DD03E33001B8B67 /* LOLFriendBackController.h */,
+				A207F9481DD03E33001B8B67 /* LOLFriendBackController.m */,
+				A2A871B71DD5BC1B0066E308 /* LOLFriendViewController.h */,
+				A2A871B81DD5BC1B0066E308 /* LOLFriendViewController.m */,
 			);
 			path = Friend;
 			sourceTree = "<group>";
@@ -812,8 +811,10 @@
 		A207F9491DD03E33001B8B67 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				A207F94A1DD03E33001B8B67 /* LOLMeViewController.h */,
-				A207F94B1DD03E33001B8B67 /* LOLMeViewController.m */,
+				A207F94A1DD03E33001B8B67 /* LOLMeBackViewController.h */,
+				A207F94B1DD03E33001B8B67 /* LOLMeBackViewController.m */,
+				A2A871B41DD5BB070066E308 /* LOLMeViewController.h */,
+				A2A871B51DD5BB070066E308 /* LOLMeViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -1150,6 +1151,33 @@
 			path = personinfo;
 			sourceTree = "<group>";
 		};
+		A2A871C31DD5C8200066E308 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A2A871C41DD5C8200066E308 /* LOLBaseBackViewController.h */,
+				A2A871C51DD5C8200066E308 /* LOLBaseBackViewController.m */,
+				A2A871C61DD5C8200066E308 /* LOLBaseMethod.h */,
+				A2A871C71DD5C8200066E308 /* LOLBaseMethod.m */,
+				A2A871C81DD5C8200066E308 /* LOLBasePanViewController.h */,
+				A2A871C91DD5C8200066E308 /* LOLBasePanViewController.m */,
+				A2A871CA1DD5C8200066E308 /* LOLBaseViewController.h */,
+				A2A871CB1DD5C8200066E308 /* LOLBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A2A871CC1DD5C8200066E308 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				A2A871CD1DD5C8200066E308 /* LOL_DefineValue.h */,
+				A2A871CE1DD5C8200066E308 /* LOL_Request.h */,
+				A2A871CF1DD5C8200066E308 /* LOLRequest.h */,
+				A2A871D01DD5C8200066E308 /* LOLRequest.m */,
+				A2A871D11DD5C8200066E308 /* PrefixHeader_LOL.pch */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1380,24 +1408,23 @@
 				A207FA871DD03E33001B8B67 /* UIScrollView+MJRefresh.m in Sources */,
 				A207FA921DD03E33001B8B67 /* UIImage+GIF.m in Sources */,
 				A207FA8F1DD03E33001B8B67 /* SDWebImageManager.m in Sources */,
+				A2A871C21DD5C5F50066E308 /* UIButton+RemoveHighlightEffect.m in Sources */,
 				A207FA941DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A207FA881DD03E33001B8B67 /* UIView+MJExtension.m in Sources */,
 				A207FA8A1DD03E33001B8B67 /* SDImageCache.m in Sources */,
+				A2A871D21DD5C8200066E308 /* LOLBaseBackViewController.m in Sources */,
 				A207FA891DD03E33001B8B67 /* NSData+ImageContentType.m in Sources */,
 				A207FA7B1DD03E33001B8B67 /* MJRefreshAutoGifFooter.m in Sources */,
 				A207FA781DD03E33001B8B67 /* MJRefreshComponent.m in Sources */,
 				A207FA661DD03E33001B8B67 /* MASViewAttribute.m in Sources */,
-				A207FA4C1DD03E33001B8B67 /* LOLFoundController.m in Sources */,
+				A207FA4C1DD03E33001B8B67 /* LOLFoundBackController.m in Sources */,
 				A207FA6A1DD03E33001B8B67 /* View+MASAdditions.m in Sources */,
 				A207FA611DD03E33001B8B67 /* AFURLSessionManager.m in Sources */,
 				A207FA651DD03E33001B8B67 /* MASLayoutConstraint.m in Sources */,
 				A207FA6F1DD03E33001B8B67 /* MJPropertyKey.m in Sources */,
 				A207FA5F1DD03E33001B8B67 /* AFURLRequestSerialization.m in Sources */,
-				A207F9F51DD03E33001B8B67 /* LOLBaseMethod.m in Sources */,
 				A207FA821DD03E33001B8B67 /* MJRefreshNormalHeader.m in Sources */,
 				A207FA641DD03E33001B8B67 /* MASConstraintMaker.m in Sources */,
-				A207F9F61DD03E33001B8B67 /* LOLBaseViewController.m in Sources */,
-				A28779AF1DD4550D00CD4026 /* LOLBasePanViewController.m in Sources */,
 				A207FA631DD03E33001B8B67 /* MASConstraint.m in Sources */,
 				A207FA621DD03E33001B8B67 /* MASCompositeConstraint.m in Sources */,
 				A207FA671DD03E33001B8B67 /* MASViewConstraint.m in Sources */,
@@ -1409,7 +1436,6 @@
 				A207F9FA1DD03E33001B8B67 /* UIView+Animation.m in Sources */,
 				A207FA501DD03E33001B8B67 /* LOLNewsDetailController.m in Sources */,
 				A207FA861DD03E33001B8B67 /* UIScrollView+MJExtension.m in Sources */,
-				A28779B21DD4625700CD4026 /* LOLBaseBackViewController.m in Sources */,
 				A207FA601DD03E33001B8B67 /* AFURLResponseSerialization.m in Sources */,
 				A207FA761DD03E33001B8B67 /* MJRefreshAutoFooter.m in Sources */,
 				A207F9FB1DD03E33001B8B67 /* UIView+BlockGesture.m in Sources */,
@@ -1419,6 +1445,7 @@
 				A207F9FE1DD03E33001B8B67 /* UIView+Visuals.m in Sources */,
 				A207F89C1DD03DDC001B8B67 /* main.m in Sources */,
 				A207FA791DD03E33001B8B67 /* MJRefreshFooter.m in Sources */,
+				A2A871D41DD5C8200066E308 /* LOLBasePanViewController.m in Sources */,
 				A207FA5B1DD03E33001B8B67 /* LOLMainRootController.m in Sources */,
 				A207FA561DD03E33001B8B67 /* LOLNewsNormalClassView.m in Sources */,
 				A207FA581DD03E33001B8B67 /* LOLNewsSpecialClassCell.m in Sources */,
@@ -1427,19 +1454,24 @@
 				A207FA931DD03E33001B8B67 /* UIImage+MultiFormat.m in Sources */,
 				A207FA8C1DD03E33001B8B67 /* SDWebImageDecoder.m in Sources */,
 				A207FA591DD03E33001B8B67 /* LOLNewsSpecialClassView.m in Sources */,
+				A2A871D51DD5C8200066E308 /* LOLBaseViewController.m in Sources */,
 				A207FA6B1DD03E33001B8B67 /* ViewController+MASAdditions.m in Sources */,
 				A207FA011DD03E33001B8B67 /* JPLoopViewLayout.m in Sources */,
+				A2A871BC1DD5BDB40066E308 /* LOLFoundViewController.m in Sources */,
 				A207FA801DD03E33001B8B67 /* MJRefreshBackStateFooter.m in Sources */,
 				A207FA811DD03E33001B8B67 /* MJRefreshGifHeader.m in Sources */,
 				A207FA7A1DD03E33001B8B67 /* MJRefreshHeader.m in Sources */,
 				A207FA001DD03E33001B8B67 /* JPLoopViewCell.m in Sources */,
 				A207FA771DD03E33001B8B67 /* MJRefreshBackFooter.m in Sources */,
+				A2A871D31DD5C8200066E308 /* LOLBaseMethod.m in Sources */,
 				A207FA041DD03E33001B8B67 /* LOLNavigationController.m in Sources */,
 				A207FA521DD03E33001B8B67 /* LOLNewsClassModel.m in Sources */,
-				A207FA4E1DD03E33001B8B67 /* LOLMeViewController.m in Sources */,
+				A207FA4E1DD03E33001B8B67 /* LOLMeBackViewController.m in Sources */,
 				A207FA4F1DD03E33001B8B67 /* LOLNewsController.m in Sources */,
 				A207F9FF1DD03E33001B8B67 /* JPLoopView.m in Sources */,
+				A2A871B91DD5BC1B0066E308 /* LOLFriendViewController.m in Sources */,
 				A207FA831DD03E33001B8B67 /* MJRefreshStateHeader.m in Sources */,
+				A2A871B61DD5BB070066E308 /* LOLMeViewController.m in Sources */,
 				A207FA7F1DD03E33001B8B67 /* MJRefreshBackNormalFooter.m in Sources */,
 				A207FA6C1DD03E33001B8B67 /* MJExtensionConst.m in Sources */,
 				A207FA7D1DD03E33001B8B67 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1448,9 +1480,9 @@
 				A207FA731DD03E33001B8B67 /* NSObject+MJKeyValue.m in Sources */,
 				A207FA851DD03E33001B8B67 /* MJRefreshConst.m in Sources */,
 				A2CF17CA1DD16FF800FC18A3 /* LOLNewsBackViewController.m in Sources */,
-				A207F9F71DD03E33001B8B67 /* LOLRequest.m in Sources */,
 				A207F9F81DD03E33001B8B67 /* UIColor+JP_Color.m in Sources */,
 				A207FA751DD03E33001B8B67 /* NSString+MJExtension.m in Sources */,
+				A2A871D61DD5C8200066E308 /* LOLRequest.m in Sources */,
 				A207FA7C1DD03E33001B8B67 /* MJRefreshAutoNormalFooter.m in Sources */,
 				A207F9F91DD03E33001B8B67 /* UITableView+JP_Refresh.m in Sources */,
 				A207FA021DD03E33001B8B67 /* UIImageView+LoadImage.m in Sources */,
@@ -1458,7 +1490,7 @@
 				A207FA8E1DD03E33001B8B67 /* SDWebImageDownloaderOperation.m in Sources */,
 				A207FA5D1DD03E33001B8B67 /* AFNetworkReachabilityManager.m in Sources */,
 				A207FA7E1DD03E33001B8B67 /* MJRefreshBackGifFooter.m in Sources */,
-				A207FA4D1DD03E33001B8B67 /* LOLFriendController.m in Sources */,
+				A207FA4D1DD03E33001B8B67 /* LOLFriendBackController.m in Sources */,
 				A207FA6E1DD03E33001B8B67 /* MJProperty.m in Sources */,
 				A207FA681DD03E33001B8B67 /* NSArray+MASAdditions.m in Sources */,
 				A207FA531DD03E33001B8B67 /* LOLNewsScrollCellModel.m in Sources */,
@@ -1614,7 +1646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ST6CBN66AM;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LOLAssistantD/BasePublic/PrefixHeader_LOL.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LOLAssistantD/Public/PrefixHeader_LOL.pch";
 				INFOPLIST_FILE = LOLAssistantD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dong.LOLAssistantD;
@@ -1627,7 +1659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ST6CBN66AM;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LOLAssistantD/BasePublic/PrefixHeader_LOL.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LOLAssistantD/Public/PrefixHeader_LOL.pch";
 				INFOPLIST_FILE = LOLAssistantD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dong.LOLAssistantD;

@@ -1,22 +1,23 @@
 //
-//  LOLFriendController.m
-//  LOL Helper
+//  LOLFriendViewController.m
+//  LOLAssistantD
 //
-//  Created by tztddong on 16/10/9.
+//  Created by tztddong on 2016/11/11.
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
-#import "LOLFriendController.h"
+#import "LOLFriendViewController.h"
 
-@interface LOLFriendController ()
+@interface LOLFriendViewController ()
 
 @end
 
-@implementation LOLFriendController
+@implementation LOLFriendViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {

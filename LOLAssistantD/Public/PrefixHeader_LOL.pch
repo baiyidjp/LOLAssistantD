@@ -25,6 +25,7 @@
 #import "LOLBaseViewController.h"
 #import "LOLRequest.h"
 #import "LOLBaseMethod.h"
+#import "UIButton+RemoveHighlightEffect.h"
 //第三方
 #import "AFNetworking.h"
 #import "Masonry.h"

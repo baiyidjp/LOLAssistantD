@@ -1,8 +1,8 @@
 //
 //  LOLMeViewController.m
-//  LOL Helper
+//  LOLAssistantD
 //
-//  Created by tztddong on 16/10/9.
+//  Created by tztddong on 2016/11/11.
 //  Copyright © 2016年 dongjiangpeng. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {

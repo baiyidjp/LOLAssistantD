@@ -8,6 +8,6 @@
 
 #import "LOLBaseBackViewController.h"
 
-@interface LOLFriendController : LOLBaseBackViewController
+@interface LOLFriendBackController : LOLBaseBackViewController
 
 @end

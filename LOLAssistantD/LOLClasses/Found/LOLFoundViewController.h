@@ -1,5 +1,5 @@
 //
-//  LOLMeViewController.h
+//  LOLFoundViewController.h
 //  LOLAssistantD
 //
 //  Created by tztddong on 2016/11/11.
@@ -8,6 +8,6 @@
 
 #import "LOLBasePanViewController.h"
 
-@interface LOLMeViewController : LOLBasePanViewController
+@interface LOLFoundViewController : LOLBasePanViewController
 
 @end

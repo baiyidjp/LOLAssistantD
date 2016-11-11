@@ -115,8 +115,6 @@ static NSString *newsCell = @"newsCell";
     _titleNameLab.hidden = YES;
     [self.view insertSubview:_titleNameLab aboveSubview:_alphaView];
     
-    [self.view insertSubview:self.topAlphaView aboveSubview:_headIconBtn];
-
 }
 
 
@@ -394,7 +392,7 @@ static NSString *newsCell = @"newsCell";
 
 - (BOOL)scrollImage:(JPLoopView *)loopView{
     
-    return NO;
+    return YES;
 }
 
 - (void)didSelectItem:(JPLoopView *)loopView index:(NSInteger)index{

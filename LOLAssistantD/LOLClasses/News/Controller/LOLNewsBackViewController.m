@@ -21,8 +21,6 @@
 @implementation LOLNewsBackViewController
 {
     LOLNewsController       *_newsController;
-    BOOL                    _isRightPan;
-    BOOL                    _isStopRight;
     UITabBar                *_bottomTabbar;
 }
 
@@ -32,16 +30,12 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    
-    [super viewDidDisappear:animated];
-//    [self.navigationController setNavigationBarHidden:NO];
-}
 
 - (void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO];
+    [_newsController moveToLeft];
 }
 
 - (void)viewDidLoad {

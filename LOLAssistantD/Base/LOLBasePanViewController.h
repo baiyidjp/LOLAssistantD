@@ -20,9 +20,6 @@
 
 @property(nonatomic,weak)id<LOLBasePanViewControllerDelegate> delegate;
 
-/** 覆盖层 */
-@property(nonatomic,strong)UIButton *topAlphaView;;
-
 - (void)moveToLeft;
 
 - (void)moveToRight;
