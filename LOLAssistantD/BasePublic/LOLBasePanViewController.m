@@ -43,7 +43,10 @@
     switch (panges.state) {
         case UIGestureRecognizerStateBegan:
             NSLog(@"开始滑动");
-            self.topAlphaView.hidden = NO;
+//            if (!_isStopRight) {
+                self.topAlphaView.hidden = NO;
+//                [self.topAlphaView setBackgroundImage:[self screenImage] forState:UIControlStateNormal];
+//            }
             break;
         case UIGestureRecognizerStateChanged:
         {
@@ -115,6 +118,30 @@
     _isStopRight = isStopR;
     self.topAlphaView.hidden = !isStopR;
     
+}
+
+#pragma mark - 截屏
+- (UIImage *)screenImage{
+    
+    // 将要被截图的view,即窗口的根控制器的view
+    UIViewController *beyondVC = self.view.window.rootViewController;
+    // 背景图片 总的大小
+    CGSize size = beyondVC.view.frame.size;
+    // 开启上下文,使用参数之后,截出来的是原图（YES  0.0 质量高）
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0.0);
+    // 要裁剪的矩形范围
+    CGRect rect = CGRectMake(0, 0, KWIDTH, KHEIGHT);
+    //注：iOS7以后renderInContext：由drawViewHierarchyInRect：afterScreenUpdates：替代
+    [beyondVC.view drawViewHierarchyInRect:rect  afterScreenUpdates:NO];
+    // 从上下文中,取出UIImage
+    UIImage *snapshot = UIGraphicsGetImageFromCurrentImageContext();
+    // 千万记得,结束上下文(移除栈顶的基于当前位图的图形上下文)
+    UIGraphicsEndImageContext();
+    
+    if (snapshot) {
+        return snapshot;
+    }
+    return nil;
 }
 
 @end

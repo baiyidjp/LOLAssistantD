@@ -28,6 +28,7 @@ static NSString *cellID = @"infotable";
     UILabel             *_setLabel;
     LOLLeftSetBtn       *_leftSetBtn;
     NSMutableArray      *_dataArray;
+    UIImageView         *_backImageView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,6 +38,10 @@ static NSString *cellID = @"infotable";
 }
 
 - (void)configHeaderView{
+    
+    _backImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, KWIDTH*0.8, KHEIGHT)];
+    _backImageView.image = [UIImage imageNamed:@"left_bg"];
+    [self.view addSubview:_backImageView];
     
     _headerIcon = [[UIImageView alloc] initWithFrame:CGRectMake(KMARGIN*3/2.0, 5*KMARGIN, 5*KMARGIN, 5*KMARGIN)];
     _headerIcon.layer.cornerRadius = 25;
