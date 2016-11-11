@@ -196,6 +196,7 @@
 		A2A871D41DD5C8200066E308 /* LOLBasePanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871C91DD5C8200066E308 /* LOLBasePanViewController.m */; };
 		A2A871D51DD5C8200066E308 /* LOLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871CB1DD5C8200066E308 /* LOLBaseViewController.m */; };
 		A2A871D61DD5C8200066E308 /* LOLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871D01DD5C8200066E308 /* LOLRequest.m */; };
+		A2A871DA1DD5CD580066E308 /* LOLSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A871D91DD5CD580066E308 /* LOLSetViewController.m */; };
 		A2CF17CA1DD16FF800FC18A3 /* LOLNewsBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CF17C91DD16FF800FC18A3 /* LOLNewsBackViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -523,6 +524,8 @@
 		A2A871CF1DD5C8200066E308 /* LOLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLRequest.h; sourceTree = "<group>"; };
 		A2A871D01DD5C8200066E308 /* LOLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLRequest.m; sourceTree = "<group>"; };
 		A2A871D11DD5C8200066E308 /* PrefixHeader_LOL.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader_LOL.pch; sourceTree = "<group>"; };
+		A2A871D81DD5CD580066E308 /* LOLSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLSetViewController.h; sourceTree = "<group>"; };
+		A2A871D91DD5CD580066E308 /* LOLSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLSetViewController.m; sourceTree = "<group>"; };
 		A2CF17C81DD16FF800FC18A3 /* LOLNewsBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLNewsBackViewController.h; sourceTree = "<group>"; };
 		A2CF17C91DD16FF800FC18A3 /* LOLNewsBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLNewsBackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -778,6 +781,7 @@
 		A207F9421DD03E33001B8B67 /* LOLClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A2A871D71DD5CD460066E308 /* Set */,
 				A207F9431DD03E33001B8B67 /* Found */,
 				A207F9461DD03E33001B8B67 /* Friend */,
 				A207F9491DD03E33001B8B67 /* Me */,
@@ -1178,6 +1182,15 @@
 			path = Public;
 			sourceTree = "<group>";
 		};
+		A2A871D71DD5CD460066E308 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				A2A871D81DD5CD580066E308 /* LOLSetViewController.h */,
+				A2A871D91DD5CD580066E308 /* LOLSetViewController.m */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1477,6 +1490,7 @@
 				A207FA7D1DD03E33001B8B67 /* MJRefreshAutoStateFooter.m in Sources */,
 				A207FA911DD03E33001B8B67 /* UIButton+WebCache.m in Sources */,
 				A207FA961DD03E33001B8B67 /* UIView+WebCacheOperation.m in Sources */,
+				A2A871DA1DD5CD580066E308 /* LOLSetViewController.m in Sources */,
 				A207FA731DD03E33001B8B67 /* NSObject+MJKeyValue.m in Sources */,
 				A207FA851DD03E33001B8B67 /* MJRefreshConst.m in Sources */,
 				A2CF17CA1DD16FF800FC18A3 /* LOLNewsBackViewController.m in Sources */,

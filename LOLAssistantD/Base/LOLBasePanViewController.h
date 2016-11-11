@@ -24,4 +24,6 @@
 
 - (void)moveToRight;
 
+- (void)moveLeft;
+
 @end

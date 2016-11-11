@@ -7,6 +7,7 @@
 //
 
 #import "LOLNavigationController.h"
+#import "LOLBasePanViewController.h"
 
 @interface LOLNavigationController ()<UIGestureRecognizerDelegate>
 
@@ -64,9 +65,13 @@
         //将宽度设为负值
         spaceItem.width = -10;
         viewController.navigationItem.leftBarButtonItems = @[spaceItem,colseItem];
+        NSLog(@"%@",self.visibleViewController.childViewControllers);
+        LOLBasePanViewController *baseCtrl = self.visibleViewController.childViewControllers[0];
+        [baseCtrl moveLeft];
         
         //对当前屏幕截图
         [self screenShot];
+
     }
     //这句代码的位置是一个关键
     [super pushViewController:viewController animated:animated];

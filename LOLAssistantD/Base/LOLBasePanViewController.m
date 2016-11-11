@@ -112,6 +112,15 @@
     [self moveViewto:KWIDTH*0.8 isStopR:YES];
 }
 
+- (void)moveLeft{
+    
+    self.view.jp_x = 0;
+    //代理
+    [self.delegate baseViewMoveTo:0 animaition:NO];
+    _isStopRight = NO;
+    _topAlphaView.hidden = YES;
+}
+
 #pragma mark - move view
 - (void)moveViewto:(CGFloat)x isStopR:(BOOL)isStopR{
     

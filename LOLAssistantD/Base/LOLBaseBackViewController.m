@@ -8,6 +8,7 @@
 
 #import "LOLBaseBackViewController.h"
 #import "LOLLeftSetBtn.h"
+#import "LOLSetViewController.h"
 
 static NSString *cellID = @"infotable";
 
@@ -86,6 +87,7 @@ static NSString *cellID = @"infotable";
     [_leftSetBtn setTitle:@"设置" forState:UIControlStateNormal];
     [_leftSetBtn.titleLabel setFont:FONTSIZE(20)];
     [_leftSetBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [_leftSetBtn addTarget:self action:@selector(leftSetBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_leftSetBtn];
 }
 
@@ -127,6 +129,15 @@ static NSString *cellID = @"infotable";
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor = [UIColor clearColor];
     return cell;
+}
+
+#pragma mark - leftSetBtnClick
+- (void)leftSetBtnClick{
+    
+    LOLSetViewController *setViewController = [[LOLSetViewController alloc] init];
+    
+    [self.navigationController pushViewController:setViewController animated:YES];
+    
 }
 
 @end
