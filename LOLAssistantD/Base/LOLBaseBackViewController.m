@@ -12,6 +12,8 @@
 
 static NSString *cellID = @"infotable";
 
+static CGFloat cellH = 60;
+
 @interface LOLBaseBackViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -68,7 +70,7 @@ static NSString *cellID = @"infotable";
     _ageBtn.layer.masksToBounds = YES;
     [self.view addSubview:_ageBtn];
     
-    _infoImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.jp_centerX+2*KMARGIN, _headerIcon.jp_y, 32, 20)];
+    _infoImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.jp_centerX+2*KMARGIN, _headerIcon.jp_y+5, 32, 20)];
     _infoImage.image = [UIImage imageNamed:@"left_card"];
     [self.view addSubview:_infoImage];
     
@@ -103,13 +105,14 @@ static NSString *cellID = @"infotable";
     [_dataArray addObject:dict3];
     [_dataArray addObject:dict4];
     
-    CGFloat tableH = _dataArray.count*KDefaultCellH;
+    CGFloat tableH = _dataArray.count*cellH;
     _infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.jp_h/2.0 - tableH/2.0, self.view.jp_w, tableH) style:UITableViewStylePlain];
     _infoTableView.dataSource = self;
     _infoTableView.delegate = self;
     _infoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _infoTableView.backgroundColor = [UIColor clearColor];
     _infoTableView.scrollEnabled = NO;
+    _infoTableView.rowHeight = cellH;
     [_infoTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     [self.view addSubview:_infoTableView];
 }
