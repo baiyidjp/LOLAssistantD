@@ -8,6 +8,7 @@
 
 #import <WebKit/WebKit.h>
 #import "LOLNewsDetailController.h"
+#import "LOLTestViewController.h"
 
 #define IOS8x ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0)
 #define WebViewNav_TintColor ([UIColor orangeColor])
@@ -54,6 +55,9 @@
 // 菜单按钮点击
 - (void)menuBtnPressed:(id)sender {
     //分享
+    
+    LOLTestViewController *ctrl = [[LOLTestViewController alloc] init];
+    [self.navigationController pushViewController:ctrl animated:YES];
 }
 - (void)configViews{
     

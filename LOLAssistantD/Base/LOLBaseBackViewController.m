@@ -135,9 +135,17 @@ static NSString *cellID = @"infotable";
 - (void)leftSetBtnClick{
     
     LOLSetViewController *setViewController = [[LOLSetViewController alloc] init];
+    [self pushController:setViewController];
+}
+
+#pragma mark - 延时跳转
+- (void)pushController:(UIViewController *)ctrl{
     
-    [self.navigationController pushViewController:setViewController animated:YES];
-    
+    LOLBasePanViewController *baseCtrl = self.childViewControllers[0];
+    [baseCtrl moveLeft];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.navigationController pushViewController:ctrl animated:YES];
+    });
 }
 
 @end

@@ -157,6 +157,7 @@
 		A207FA941DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F01DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m */; };
 		A207FA951DD03E33001B8B67 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F21DD03E33001B8B67 /* UIImageView+WebCache.m */; };
 		A207FA961DD03E33001B8B67 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A207F9F41DD03E33001B8B67 /* UIView+WebCacheOperation.m */; };
+		A27915081DD98BE90057495F /* LOLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27915071DD98BE90057495F /* LOLTestViewController.m */; };
 		A28779C51DD465D600CD4026 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B41DD465D600CD4026 /* Icon-40.png */; };
 		A28779C61DD465D600CD4026 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B51DD465D600CD4026 /* Icon-40@2x.png */; };
 		A28779C71DD465D600CD4026 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A28779B61DD465D600CD4026 /* Icon-40@3x.png */; };
@@ -472,6 +473,8 @@
 		A207F9F21DD03E33001B8B67 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		A207F9F31DD03E33001B8B67 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		A207F9F41DD03E33001B8B67 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		A27915061DD98BE90057495F /* LOLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLTestViewController.h; sourceTree = "<group>"; };
+		A27915071DD98BE90057495F /* LOLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLTestViewController.m; sourceTree = "<group>"; };
 		A28779B41DD465D600CD4026 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		A28779B51DD465D600CD4026 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		A28779B61DD465D600CD4026 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
@@ -842,6 +845,8 @@
 				A207F9511DD03E33001B8B67 /* LOLNewsDetailController.m */,
 				A2CF17C81DD16FF800FC18A3 /* LOLNewsBackViewController.h */,
 				A2CF17C91DD16FF800FC18A3 /* LOLNewsBackViewController.m */,
+				A27915061DD98BE90057495F /* LOLTestViewController.h */,
+				A27915071DD98BE90057495F /* LOLTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1425,6 +1430,7 @@
 				A207FA941DD03E33001B8B67 /* UIImageView+HighlightedWebCache.m in Sources */,
 				A207FA881DD03E33001B8B67 /* UIView+MJExtension.m in Sources */,
 				A207FA8A1DD03E33001B8B67 /* SDImageCache.m in Sources */,
+				A27915081DD98BE90057495F /* LOLTestViewController.m in Sources */,
 				A2A871D21DD5C8200066E308 /* LOLBaseBackViewController.m in Sources */,
 				A207FA891DD03E33001B8B67 /* NSData+ImageContentType.m in Sources */,
 				A207FA7B1DD03E33001B8B67 /* MJRefreshAutoGifFooter.m in Sources */,
